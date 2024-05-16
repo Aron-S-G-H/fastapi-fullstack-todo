@@ -29,7 +29,10 @@
 3. **Install dependencies**
    
    `pip install -r requirements.txt` or `poetry install`
-4. **Start the app**
+4. **Setup DB**
+
+   `alembic upgrade head`
+5. **Start the app**
 
    `python3 main.py` or `uvicorn settings:main --host 0.0.0.0 --port 8000` or `poetry run python3 main.py`
 
@@ -52,4 +55,4 @@
 3. **Run a container**
 
    `docker run --name todoApp -p 8000:8000 -d todoapp:latest`
-> **Note** : If you encounter the error 'ERROR: Exception TimeoutError: timed out' while creating the image, go to the Dockerfile and either remove or comment out line 27. Then, try building the image again.
+> **Note** : If you encounter the error 'ERROR: Exception TimeoutError: timed out' or something strange while creating the image, go to the Dockerfile and either remove or comment out line 27. Then, try building the image again.
