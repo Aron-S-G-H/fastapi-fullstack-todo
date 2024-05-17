@@ -52,7 +52,16 @@
 2. **Create an image**
    
    `docker build -t todoapp:latest --no-cache .`
-3. **Run a container**
+4. **Run a container**
 
    `docker run --name todoApp -p 8000:8000 -d todoapp:latest`
 > **Note** : If you encounter the error 'ERROR: Exception TimeoutError: timed out' or something strange while creating the image, go to the Dockerfile and either remove or comment out line 27. Then, try building the image again.
+
+## 🗂️ API documentation
+
+`http://127.0.0.1:8000/docs` or `http://127.0.0.1:8000/redoc`
+
+<br>
+
+---
+#### Any contributions are welcome
